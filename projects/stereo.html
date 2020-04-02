@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+      <meta name="author" content="Haimo Zhang">
+    
+
+    
+      <meta name="description" content="applications of binocular rivalry in HCI">
+    
+
+    
+
+    
+    
+      <title>Novel Visual Experiences | Haimo Zhang - empowering everyday life experiences</title>
+    
+
+    
+    <link id="theme" rel="stylesheet" href="/assets/css/theme-radiant.css">
+    
+    
+    <script type="text/javascript">
+var theme_brightness = (function() {
+  var current_style = 'radiant';
+  var theme = document.getElementById("theme")
+  function set(brightness) {
+    if (brightness === 'radiant' || brightness === 'ambient') {
+      var path = theme.getAttribute('href');
+      theme.setAttribute('href', path.replace(/radiant|ambient/, brightness));
+      current_style = brightness;
+    } else {
+      throw 'unknown brightness value: "' + brightness + '"';
+    }
+  }
+  function set_by_time() {
+    var h = (new Date()).getHours();
+    set(h >= 6 && h < 18 ? 'radiant' : 'ambient');
+  }
+  function toggle() {
+    if (current_style === 'radiant') {
+      set('ambient');
+    } else {
+      set('radiant');
+    }
+  }
+  set_by_time();  // default behavior is to set theme brightness based on time of day
+  return {
+    get_current: () => current_style,
+    set: set,
+    set_by_time: set_by_time,
+    toggle: toggle
+  };
+})();
+    </script>
+
+    
+    
+
+  </head>
+  <body>
+
+    <div class="panel panel-header nav-bar-container"><div class="nav-bar">
+<nav>
+  
+    
+      
+        <a href="/index.html">about</a>
+      
+    
+  
+    
+      
+        <a href="/projects.html">projects</a>
+      
+    
+  
+    
+      
+        <a href="/publications.html">publications</a>
+      
+    
+  
+    
+  
+
+  
+
+</nav>
+</div>
+</div>
+
+    <div class="panel panel-body">
+
+      <div class="panel panel-sidebar panel-sidebar-left">
+      </div>
+
+      <div class="panel panel-content"><div class="project-title-container">
+  <h1 class="project-title">Novel Visual Experiences</h1>
+  <h2 class="project-subtitle">applications of binocular rivalry in HCI</h2>
+</div>
+
+<div class="project-excerpt-container">
+  <p class="project-excerpt">With 3D TVs, VR, and AR, stereoscopic 3D contents are commonplace nowadays. These technologies can show different images to each individual eye, allowing for the presentation of arbitrarily different image pairs that do not represent 3D objects in the physical world. This creates a phenomenon called <em>binocular rivalry</em>, based on which we created several interesting visual effects, and a technique to help color blind users tell apart confusing colors.</p>
+</div>
+
+<p>In the <em>BeyondStereo</em> project, we explored several
+interesting visual effects by presenting different images to each eye.
+Below is a demo video in side-by-side 3D format (no sound).
+For the best experience, you can:</p>
+<ul>
+  <li>use a VR viewer, such as
+<a href="https://arvr.google.com/cardboard/">the Google Cardboard</a>
+(need to play in fullscreen on a phone);</li>
+  <li>use a 3D TV and set its 3D mode to “side-by-side”; or</li>
+  <li>without any special device, use
+<a href="https://www.vision3d.com/3views.html">the parallel/cross-eyed viewing technique</a>.</li>
+</ul>
+
+<video controls="">
+  <source src="/assets/projects/stereo//beyond-stereo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+  Download the video <a href="/assets/projects/stereo//beyond-stereo.mp4">here</a>.
+</video>
+
+<p>In the follow-up project, <em>ColorBless</em>,
+we applied the previous findings to help color blind users.</p>
+
+<p>For example, consider a traffic light that looks like this:</p>
+
+<p><img src="/assets/projects/stereo//traffic-light-normal.png" alt="a traffic light with red light on top, yellow light in the middle, and green light at the bottom" /></p>
+
+<p>In a certain type of color blindness,
+<a href="https://en.wikipedia.org/wiki/Color_blindness#Protanopia">protanopia</a>,
+red and green appear brownish and are thus hard to tell apart.
+The above traffic light would look like this:</p>
+
+<p><img src="/assets/projects/stereo//traffic-light-protanopia.png" alt="a traffic light with the red and green lights both appear brownish" /></p>
+
+<p>With <em>ColorBless</em>,
+the red color is darkened in one eye and brightened in the other, like this:</p>
+
+<p><img src="/assets/projects/stereo//color-bless-normal.png" alt="a traffic light where its red light appear brighter in the right eye than in the left eye" /></p>
+
+<p>For a user with protanopia, the brightness of the red light
+will also appear different in the two eyes:</p>
+
+<p><img src="/assets/projects/stereo//color-bless-protanopia.png" alt="a traffic light where its red light appear brighter in the right eye than in the left eye, simulated for a protanpia color blindness" /></p>
+
+<p>This results in a very salient sensation known as binocular luster,
+which annotates red color for a color blind user.</p>
+
+<h2 id="related-publications">Related Publications</h2>
+<div class="publication-group-container">
+    <div class="publication-group-content-container"><div class="publication-container">
+  <span class="publication">
+
+    <span class="title">Colorbless: augmenting visual information for colorblind people with binocular luster effect.</span>
+
+    <span class="authors"><span class="author ">
+          <span class="given-name">
+            Soon Hau
+          </span>
+          <span class="family-name">
+            Chua,</span>
+        </span><span class="author myself">
+          <span class="given-name">
+            Haimo
+          </span>
+          <span class="family-name">
+            Zhang,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Muhammad
+          </span>
+          <span class="family-name">
+            Hammad,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Shengdong
+          </span>
+          <span class="family-name">
+            Zhao,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Sahil
+          </span>
+          <span class="family-name">
+            Goyal,</span>
+        </span>and<span class="author ">
+          <span class="given-name">
+            Karan
+          </span>
+          <span class="family-name">
+            Singh.</span>
+        </span></span>in
+      <span class="venue">
+        ACM Transactions on Computer-Human Interaction (TOCHI).
+      </span><span class="year">
+        2015.
+      </span><span class="resources">
+      <a href="/assets/papers/chua2015colorbless.pdf">
+        📃
+        <!-- some suitable unicode characters
+          📜
+          📃
+          📄
+        -->
+      </a></span>
+
+  </span></div>
+<div class="publication-container">
+  <span class="publication">
+
+    <span class="title">Beyond stereo: an exploration of unconventional binocular presentation for novel visual experience.</span>
+
+    <span class="authors"><span class="author myself">
+          <span class="given-name">
+            Haimo
+          </span>
+          <span class="family-name">
+            Zhang,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Xiang
+          </span>
+          <span class="family-name">
+            Cao,</span>
+        </span>and<span class="author ">
+          <span class="given-name">
+            Shengdong
+          </span>
+          <span class="family-name">
+            Zhao.</span>
+        </span></span>in
+      <span class="venue">
+        Proceedings of the SIGCHI Conference on Human Factors in Computing Systems.
+      </span><span class="year">
+        2012.
+      </span><span class="publisher">
+        ACM.
+      </span><span class="resources">
+      <a href="/assets/papers/zhang2012stereo.pdf">
+        📃
+        <!-- some suitable unicode characters
+          📜
+          📃
+          📄
+        -->
+      </a>/
+        <a href="/assets/videos/zhang2012stereo.mp4">
+          🎥
+          <!-- some suitable unicode characters
+            🎥
+            📺
+          -->
+        </a></span>
+
+  </span></div>
+</div>
+  </div>
+
+</div>
+
+      <div class="panel panel-sidebar panel-sidebar-right">
+      </div>
+
+    </div>
+
+    <div class="panel panel-footer">
+    </div>
+
+  </body>
+</html>

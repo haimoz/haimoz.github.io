@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+      <meta name="author" content="Haimo Zhang">
+    
+
+    
+      <meta name="description" content="gestural interaction on physical keyboards">
+    
+
+    
+
+    
+    
+      <title>GestKeyboard | Haimo Zhang - empowering everyday life experiences</title>
+    
+
+    
+    <link id="theme" rel="stylesheet" href="/assets/css/theme-radiant.css">
+    
+    
+    <script type="text/javascript">
+var theme_brightness = (function() {
+  var current_style = 'radiant';
+  var theme = document.getElementById("theme")
+  function set(brightness) {
+    if (brightness === 'radiant' || brightness === 'ambient') {
+      var path = theme.getAttribute('href');
+      theme.setAttribute('href', path.replace(/radiant|ambient/, brightness));
+      current_style = brightness;
+    } else {
+      throw 'unknown brightness value: "' + brightness + '"';
+    }
+  }
+  function set_by_time() {
+    var h = (new Date()).getHours();
+    set(h >= 6 && h < 18 ? 'radiant' : 'ambient');
+  }
+  function toggle() {
+    if (current_style === 'radiant') {
+      set('ambient');
+    } else {
+      set('radiant');
+    }
+  }
+  set_by_time();  // default behavior is to set theme brightness based on time of day
+  return {
+    get_current: () => current_style,
+    set: set,
+    set_by_time: set_by_time,
+    toggle: toggle
+  };
+})();
+    </script>
+
+    
+    
+
+  </head>
+  <body>
+
+    <div class="panel panel-header nav-bar-container"><div class="nav-bar">
+<nav>
+  
+    
+      
+        <a href="/index.html">about</a>
+      
+    
+  
+    
+      
+        <a href="/projects.html">projects</a>
+      
+    
+  
+    
+      
+        <a href="/publications.html">publications</a>
+      
+    
+  
+    
+  
+
+  
+
+</nav>
+</div>
+</div>
+
+    <div class="panel panel-body">
+
+      <div class="panel panel-sidebar panel-sidebar-left">
+      </div>
+
+      <div class="panel panel-content"><div class="project-title-container">
+  <h1 class="project-title">GestKeyboard</h1>
+  <h2 class="project-subtitle">gestural interaction on physical keyboards</h2>
+</div>
+
+<div class="project-excerpt-container">
+  <p class="project-excerpt">Keyboard allows for efficient text entry, and (but!) little more than that. We still need mouse and hot keys for efficient operation in front of a computer. Can we introduce gestural interaction to physical keyboards, to get more stuff done?</p>
+</div>
+
+<p>In the <em>GestKeyboard</em> project,
+an uninstrumented ordinary physical keyboard
+is treated as a low-resolution touchpad,
+since the key press and key release events approximate
+the trajectory of finger movement while it
+swipes across the keyboard, activating the keys along the way.</p>
+
+<p><img src="/assets/projects/gesture//gestkeyboard-concept.png" alt="trajectory of finger movement on a keyboard" /></p>
+
+<p>The video below introduces <em>GestKeyboard</em>:</p>
+
+<video controls="">
+  <source src="/assets/projects/gesture//gestkeyboard.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+  Download the video <a href="/assets/projects/gesture//gestkeyboard.mp4">here</a>.
+</video>
+
+<p>In the <em>GestAKey</em> project, a small touchpad is installed on each keycap:</p>
+
+<p><img src="/assets/projects/gesture//pads.png" alt="small touchpads on each keycap" /></p>
+
+<p>A physical key could behave differently
+depending on the gesture performed during the keystroke.
+One good example is entering accented characters
+(e.g. “à”),
+by performing a gesture while pressing a key,
+where the key determines the base character, and the gesture determines
+the accent to be applied to that character.
+Here is a video introducing <em>GestAKey</em>:</p>
+
+<video controls="">
+  <source src="/assets/projects/gesture//gestakey-demo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+  Download the video <a href="/assets/projects/gesture//gestakey-demo.mp4">here</a>.
+</video>
+
+<h2 id="related-publications">Related Publications</h2>
+<div class="publication-group-container">
+    <div class="publication-group-content-container"><div class="publication-container">
+  <span class="publication">
+
+    <span class="title">GestAKey: Touch Interaction on Individual Keycaps.</span>
+
+    <span class="authors"><span class="author ">
+          <span class="given-name">
+            Yilei
+          </span>
+          <span class="family-name">
+            Shi,</span>
+        </span><span class="author myself">
+          <span class="given-name">
+            Haimo
+          </span>
+          <span class="family-name">
+            Zhang,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Hasitha
+          </span>
+          <span class="family-name">
+            Rajapakse,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Nuwan Tharaka
+          </span>
+          <span class="family-name">
+            Perera,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Tomás
+          </span>
+          <span class="family-name">
+            Vega Gálvez,</span>
+        </span>and<span class="author ">
+          <span class="given-name">
+            Suranga
+          </span>
+          <span class="family-name">
+            Nanayakkara.</span>
+        </span></span>in
+      <span class="venue">
+        Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems.
+      </span><span class="year">
+        2018.
+      </span><span class="publisher">
+        ACM.
+      </span><span class="place">
+        New York, NY, USA.
+      </span><span class="resources">
+      <a href="/assets/papers/shi2018gestakey.pdf">
+        📃
+        <!-- some suitable unicode characters
+          📜
+          📃
+          📄
+        -->
+      </a>/
+        <a href="/assets/videos/shi2018gestakey.m4v">
+          🎥
+          <!-- some suitable unicode characters
+            🎥
+            📺
+          -->
+        </a></span>
+
+  </span></div>
+<div class="publication-container">
+  <span class="publication">
+
+    <span class="title">GestAKey: Get More Done with Just-a-Key on a Keyboard.</span>
+
+    <span class="authors"><span class="author ">
+          <span class="given-name">
+            Yilei
+          </span>
+          <span class="family-name">
+            Shi,</span>
+        </span><span class="author ">
+          <span class="given-name">
+            Tomás
+          </span>
+          <span class="family-name">
+            Vega Gálvez,</span>
+        </span><span class="author myself">
+          <span class="given-name">
+            Haimo
+          </span>
+          <span class="family-name">
+            Zhang,</span>
+        </span>and<span class="author ">
+          <span class="given-name">
+            Suranga
+          </span>
+          <span class="family-name">
+            Nanayakkara.</span>
+        </span></span>in
+      <span class="venue">
+        Adjunct Publication of the 30th Annual ACM Symposium on User Interface Software and Technology.
+      </span><span class="year">
+        2017.
+      </span><span class="publisher">
+        Association for Computing Machinery.
+      </span><span class="place">
+        Québec City, QC, Canada.
+      </span><span class="resources">
+      <a href="/assets/papers/shi2017gestakey.pdf">
+        📃
+        <!-- some suitable unicode characters
+          📜
+          📃
+          📄
+        -->
+      </a>/
+        <a href="/assets/videos/shi2017gestakey.m4v">
+          🎥
+          <!-- some suitable unicode characters
+            🎥
+            📺
+          -->
+        </a></span>
+
+  </span></div>
+<div class="publication-container">
+  <span class="publication">
+
+    <span class="title">GestKeyboard: enabling gesture-based interaction on ordinary physical keyboard.</span>
+
+    <span class="authors"><span class="author myself">
+          <span class="given-name">
+            Haimo
+          </span>
+          <span class="family-name">
+            Zhang,</span>
+        </span>and<span class="author ">
+          <span class="given-name">
+            Yang
+          </span>
+          <span class="family-name">
+            Li.</span>
+        </span></span>in
+      <span class="venue">
+        Proceedings of the 32nd annual ACM conference on Human factors in computing systems.
+      </span><span class="year">
+        2014.
+      </span><span class="publisher">
+        ACM.
+      </span><span class="resources">
+      <a href="/assets/papers/zhang2014gestkeyboard.pdf">
+        📃
+        <!-- some suitable unicode characters
+          📜
+          📃
+          📄
+        -->
+      </a>/
+        <a href="/assets/videos/zhang2014gestkeyboard.mp4">
+          🎥
+          <!-- some suitable unicode characters
+            🎥
+            📺
+          -->
+        </a></span>
+
+  </span></div>
+</div>
+  </div>
+
+</div>
+
+      <div class="panel panel-sidebar panel-sidebar-right">
+      </div>
+
+    </div>
+
+    <div class="panel panel-footer">
+    </div>
+
+  </body>
+</html>

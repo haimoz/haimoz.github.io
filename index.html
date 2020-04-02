@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+      <meta name="author" content="Haimo Zhang">
+    
+
+    
+
+    
+
+    
+    
+      <title>Haimo Zhang - empowering everyday life experiences</title>
+    
+
+    
+    <link id="theme" rel="stylesheet" href="/assets/css/theme-radiant.css">
+    
+    
+    <script type="text/javascript">
+var theme_brightness = (function() {
+  var current_style = 'radiant';
+  var theme = document.getElementById("theme")
+  function set(brightness) {
+    if (brightness === 'radiant' || brightness === 'ambient') {
+      var path = theme.getAttribute('href');
+      theme.setAttribute('href', path.replace(/radiant|ambient/, brightness));
+      current_style = brightness;
+    } else {
+      throw 'unknown brightness value: "' + brightness + '"';
+    }
+  }
+  function set_by_time() {
+    var h = (new Date()).getHours();
+    set(h >= 6 && h < 18 ? 'radiant' : 'ambient');
+  }
+  function toggle() {
+    if (current_style === 'radiant') {
+      set('ambient');
+    } else {
+      set('radiant');
+    }
+  }
+  set_by_time();  // default behavior is to set theme brightness based on time of day
+  return {
+    get_current: () => current_style,
+    set: set,
+    set_by_time: set_by_time,
+    toggle: toggle
+  };
+})();
+    </script>
+
+    
+    
+
+  </head>
+  <body>
+
+    <div class="panel panel-header nav-bar-container"><div class="nav-bar">
+<nav>
+  
+    
+      
+        <span class="current">about</span>
+      
+    
+  
+    
+      
+        <a href="/projects.html">projects</a>
+      
+    
+  
+    
+      
+        <a href="/publications.html">publications</a>
+      
+    
+  
+    
+  
+
+  
+
+</nav>
+</div>
+</div>
+
+    <div class="panel panel-body">
+
+      <div class="panel panel-sidebar panel-sidebar-left">
+      </div>
+
+      <div class="panel panel-content"><p>I am Haimo Zhang, a researcher in human-computer interaction. I am interested in using technologies to empower people in their daily life experiences.</p>
+
+<ul>
+  <li><em>How to feel the physical and virtual world
+in ways beyond our biological limits?</em></li>
+  <li><em>How to include ordinary passive objects
+into digital interactive experiences?</em></li>
+  <li><em>How to train our brain to be more effective in certain tasks?</em></li>
+</ul>
+
+<p>In addressing these challenges,
+I mostly rely on intuition to conceptualize
+interaction experiences and use cases,
+while adapting various technologies and scientific methods
+to prototype and test my intuitions.</p>
+
+<p>In my research, I have learned to work with many technologies,
+such as
+stereoscopic 3D displays,
+VR,
+information visualization toolkits,
+motion and touch sensors, and haptic devices.
+I look forward to a lifetime of learning.</p>
+
+<p>Reach me at
+<a href="mailto:haimoz@acm.org">haimoz@acm.org</a></p>
+</div>
+
+      <div class="panel panel-sidebar panel-sidebar-right">
+      </div>
+
+    </div>
+
+    <div class="panel panel-footer">
+    </div>
+
+  </body>
+</html>
