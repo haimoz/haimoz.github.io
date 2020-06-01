@@ -46,7 +46,7 @@ var theme_brightness = (function() {
       set('radiant');
     }
   }
-  set_by_time();  // default behavior is to set theme brightness based on time of day
+  //set_by_time();  // enable this line to set theme brightness based on the visitor's time of day
   return {
     get_current: () => current_style,
     set: set,
@@ -63,6 +63,9 @@ var theme_brightness = (function() {
   <body>
 
     <div class="panel panel-header nav-bar-container"><div class="nav-bar">
+  <div class="site-name">
+    Haimo Zhang
+  </div>
 <nav>
   
     
@@ -73,7 +76,7 @@ var theme_brightness = (function() {
   
     
       
-        <a href="/projects.html">projects</a>
+        <a href="/research.html">research</a>
       
     
   
@@ -97,21 +100,15 @@ var theme_brightness = (function() {
       <div class="panel panel-sidebar panel-sidebar-left">
       </div>
 
-      <div class="panel panel-content"><p>I am Haimo Zhang, a researcher in human-computer interaction. I am interested in using technologies to empower people in their daily life experiences.</p>
-
+      <div class="panel panel-content"><p>I am a researcher in human-computer interaction. I am interested in using technologies to empower people in their daily life experiences.
+Specifically, I look at the interface between a human
+and the external environment,
+and aim to enhance three areas of human capabilities:</p>
 <ul>
-  <li><em>How to feel the physical and virtual world
-in ways beyond our biological limits?</em></li>
-  <li><em>How to include ordinary passive objects
-into digital interactive experiences?</em></li>
-  <li><em>How to train our brain to be more effective in certain tasks?</em></li>
+  <li><strong>Perception</strong> — how we <strong>feel</strong> the external environment.</li>
+  <li><strong>Cognition</strong> — how we <strong>understand</strong> the external environment.</li>
+  <li><strong>Action</strong> — how we <strong>affect</strong> the external environment.</li>
 </ul>
-
-<p>In addressing these challenges,
-I mostly rely on intuition to conceptualize
-interaction experiences and use cases,
-while adapting various technologies and scientific methods
-to prototype and test my intuitions.</p>
 
 <p>In my research, I have learned to work with many technologies,
 such as

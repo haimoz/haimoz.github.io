@@ -1,126 +1,451 @@
-@font-face { font-family: "Cuprum"; font-style: normal; font-weight: 400; font-display: swap; src: local("Cuprum Regular"), local("Cuprum-Regular"), url("/assets/fonts/Cuprum/Cuprum-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Cuprum Regular"), local("Cuprum-Regular"), url("/assets/fonts/Cuprum/Cuprum-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Cuprum Italic"), local("Cuprum-Italic"), url("/assets/fonts/Cuprum/Cuprum-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Cuprum Bold"), local("Cuprum-Bold"), url("/assets/fonts/Cuprum/Cuprum-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), url("/assets/fonts/Cuprum/Cuprum-BoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Merriweather Light"), local("Merriweather-Light"), url("/assets/fonts/Merriweather/Merriweather-Light.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"), url("/assets/fonts/Merriweather/Merriweather-LightItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Merriweather Regular"), local("Merriweather-Regular"), url("/assets/fonts/Merriweather/Merriweather-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Merriweather Italic"), local("Merriweather-Italic"), url("/assets/fonts/Merriweather/Merriweather-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Merriweather Bold"), local("Merriweather-Bold"), url("/assets/fonts/Merriweather/Merriweather-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"), url("/assets/fonts/Merriweather/Merriweather-BoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Merriweather Black"), local("Merriweather-Black"), url("/assets/fonts/Merriweather/Merriweather-Black.ttf") format("ttf"); }
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Merriweather Black Italic"), local("Merriweather-BlackItalic"), url("/assets/fonts/Merriweather/Merriweather-BlackItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("/assets/fonts/Roboto/Roboto-Thin.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"), url("/assets/fonts/Roboto/Roboto-ThinItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto Light"), local("Roboto-Light"), url("/assets/fonts/Roboto/Roboto-Light.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("/assets/fonts/Roboto/Roboto-LightItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("/assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("/assets/fonts/Roboto/Roboto-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url("/assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("/assets/fonts/Roboto/Roboto-BoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Roboto Black"), local("Roboto-Black"), url("/assets/fonts/Roboto/Roboto-Black.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url("/assets/fonts/Roboto/Roboto-BlackItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Ubuntu Mono Regular"), local("UbuntuMono-Regular"), url("/assets/fonts/UbuntuMono/UbuntuMono-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Ubuntu Mono Italic"), local("UbuntuMono-Italic"), url("/assets/fonts/UbuntuMono/UbuntuMono-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Ubuntu Mono Bold"), local("UbuntuMono-Bold"), url("/assets/fonts/UbuntuMono/UbuntuMono-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Ubuntu Mono Bold Italic"), local("UbuntuMono-BoldItalic"), url("/assets/fonts/UbuntuMono/UbuntuMono-BoldItalic.ttf") format("ttf"); }
+div.panel, div.card {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
-@font-face { font-family: "Cuprum"; font-style: italic; font-weight: 400; font-display: swap; src: local("Cuprum Italic"), local("Cuprum-Italic"), url("/assets/fonts/Cuprum/Cuprum-Italic.ttf") format("ttf"); }
+div.publication-container .resources a, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a {
+  display: flex;
+  align-items: center; }
+  div.publication-container .resources a svg, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a svg {
+    width: 1em;
+    height: 1em; }
+    div.publication-container .resources a svg .svg-foreground, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a svg .svg-foreground {
+      fill: #88C0D0; }
+    div.publication-container .resources a svg .svg-background, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a svg .svg-background {
+      fill: #2E3440; }
 
-@font-face { font-family: "Cuprum"; font-style: normal; font-weight: 700; font-display: swap; src: local("Cuprum Bold"), local("Cuprum-Bold"), url("/assets/fonts/Cuprum/Cuprum-Bold.ttf") format("ttf"); }
+div.publication-container .resources a:hover, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a:hover {
+  background: #88C0D0; }
+  div.publication-container .resources a:hover svg .svg-foreground, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a:hover svg .svg-foreground {
+    fill: #2E3440; }
+  div.publication-container .resources a:hover svg .svg-background, div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a:hover svg .svg-background {
+    fill: #88C0D0; }
 
-@font-face { font-family: "Cuprum"; font-style: italic; font-weight: 700; font-display: swap; src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), url("/assets/fonts/Cuprum/Cuprum-BoldItalic.ttf") format("ttf"); }
+/*
+ * media breakpoints
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+html {
+  color: #ECEFF4;
+  background-color: #2E3440;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 1em; }
 
-@font-face { font-family: "Merriweather"; font-style: normal; font-weight: 300; font-display: swap; src: local("Merriweather Light"), local("Merriweather-Light"), url("/assets/fonts/Merriweather/Merriweather-Light.ttf") format("ttf"); }
+::selection {
+  color: #2E3440;
+  background-color: #ECEFF4; }
 
-@font-face { font-family: "Merriweather"; font-style: italic; font-weight: 300; font-display: swap; src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"), url("/assets/fonts/Merriweather/Merriweather-LightItalic.ttf") format("ttf"); }
+div.card {
+  box-shadow: 0 0 0 0 rgba(23, 26, 32, 0.5); }
 
-@font-face { font-family: "Merriweather"; font-style: normal; font-weight: 400; font-display: swap; src: local("Merriweather Regular"), local("Merriweather-Regular"), url("/assets/fonts/Merriweather/Merriweather-Regular.ttf") format("ttf"); }
+a {
+  color: #88C0D0;
+  text-decoration: none; }
 
-@font-face { font-family: "Merriweather"; font-style: italic; font-weight: 400; font-display: swap; src: local("Merriweather Italic"), local("Merriweather-Italic"), url("/assets/fonts/Merriweather/Merriweather-Italic.ttf") format("ttf"); }
+a:hover {
+  color: #2E3440;
+  background-color: #88C0D0; }
 
-@font-face { font-family: "Merriweather"; font-style: normal; font-weight: 700; font-display: swap; src: local("Merriweather Bold"), local("Merriweather-Bold"), url("/assets/fonts/Merriweather/Merriweather-Bold.ttf") format("ttf"); }
+div.panel-header {
+  /* full-width header on phones */
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 600px) {
+    div.panel-header {
+      width: 80%;
+      padding: initial;
+      margin: auto; } }
 
-@font-face { font-family: "Merriweather"; font-style: italic; font-weight: 700; font-display: swap; src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"), url("/assets/fonts/Merriweather/Merriweather-BoldItalic.ttf") format("ttf"); }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  color: #ECEFF4; }
 
-@font-face { font-family: "Merriweather"; font-style: normal; font-weight: 900; font-display: swap; src: local("Merriweather Black"), local("Merriweather-Black"), url("/assets/fonts/Merriweather/Merriweather-Black.ttf") format("ttf"); }
+img, video {
+  box-shadow: 0 0 0 0 rgba(23, 26, 32, 0.5);
+  max-height: 10em;
+  max-width: 100%;
+  width: auto; }
 
-@font-face { font-family: "Merriweather"; font-style: italic; font-weight: 900; font-display: swap; src: local("Merriweather Black Italic"), local("Merriweather-BlackItalic"), url("/assets/fonts/Merriweather/Merriweather-BlackItalic.ttf") format("ttf"); }
+video {
+  max-height: 20em; }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 100; font-display: swap; src: local("Roboto Thin"), local("Roboto-Thin"), url("/assets/fonts/Roboto/Roboto-Thin.ttf") format("ttf"); }
+div.nav-bar {
+  font-family: "Roboto", sans-serif; }
+  div.nav-bar div.site-name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: .3em; }
+  div.nav-bar nav {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    div.nav-bar nav * {
+      margin: 0;
+      padding: 0.1em 0.5em;
+      color: #88C0D0; }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 100; font-display: swap; src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"), url("/assets/fonts/Roboto/Roboto-ThinItalic.ttf") format("ttf"); }
+nav .current {
+  border-bottom-style: solid;
+  border-bottom-width: 0.15em;
+  border-bottom-color: #88C0D0; }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 300; font-display: swap; src: local("Roboto Light"), local("Roboto-Light"), url("/assets/fonts/Roboto/Roboto-Light.ttf") format("ttf"); }
+nav a:hover {
+  background-color: #88C0D0;
+  color: #2E3440;
+  transition: box-shadow 0.1s;
+  border-bottom-style: solid;
+  border-bottom-width: 0.15em;
+  border-bottom-color: #88C0D0;
+  box-shadow: 0 0 0.5em 0.1em #88C0D0;
+  text-shadow: 0 0 0.1em #2E3440; }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 300; font-display: swap; src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("/assets/fonts/Roboto/Roboto-LightItalic.ttf") format("ttf"); }
+/*
+nav div.brightness-switcher {
+  display: inline;
+  img {
+    @include clear_box_shadow;
+    height: 1em;
+    width: auto;
+  }
+}
+nav div.brightness-switcher:hover {
+  background-color: $bg0;
+}
+//*/
+div.panel-body {
+  display: flex;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 992px) {
+    div.panel-body {
+      padding: initial;
+      margin: auto; } }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 400; font-display: swap; src: local("Roboto Regular"), local("Roboto-Regular"), url("/assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf"); }
+div.panel-sidebar {
+  margin: auto;
+  width: 10%;
+  /* hide sidebar on mobile devices */
+  display: none; }
+  @media only screen and (min-width: 992px) {
+    div.panel-sidebar {
+      display: initial; } }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 400; font-display: swap; src: local("Roboto Italic"), local("Roboto-Italic"), url("/assets/fonts/Roboto/Roboto-Italic.ttf") format("ttf"); }
+div.panel-content {
+  padding: 0;
+  margin: 0;
+  /* full-width content column on mobile devices */
+  width: 100%; }
+  @media only screen and (min-width: 992px) {
+    div.panel-content {
+      padding: initial;
+      margin: auto;
+      /* scale content column width with screen size */
+      width: 80%; } }
+  @media only screen and (min-width: 1200px) {
+    div.panel-content {
+      /* fixed content column width for HiDPI screens */
+      width: 960px; } }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 500; font-display: swap; src: local("Roboto Medium"), local("Roboto-Medium"), url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf"); }
+span.publication-group-header {
+  font-family: "Roboto", sans-serif; }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 500; font-display: swap; src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url("/assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("ttf"); }
+div.publication-group-content-container {
+  padding-left: 3em; }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 700; font-display: swap; src: local("Roboto Bold"), local("Roboto-Bold"), url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"); }
+div.publication-container {
+  margin: 1.5em 0;
+  font-size: 1em;
+  color: #C4CDDE;
+  font-weight: 100; }
+  div.publication-container span.title {
+    color: #ECEFF4;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.2; }
+  div.publication-container span.venue {
+    font-style: italic; }
+  div.publication-container span.to-appear-notice {
+    font-style: italic; }
+  div.publication-container .resources {
+    display: flex; }
+    div.publication-container .resources a {
+      padding-left: .2em;
+      padding-right: .2em; }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 700; font-display: swap; src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("/assets/fonts/Roboto/Roboto-BoldItalic.ttf") format("ttf"); }
+span.title, span.authors {
+  display: block; }
 
-@font-face { font-family: "Roboto"; font-style: normal; font-weight: 900; font-display: swap; src: local("Roboto Black"), local("Roboto-Black"), url("/assets/fonts/Roboto/Roboto-Black.ttf") format("ttf"); }
+div.project-category-name {
+  padding: 0;
+  margin-top: .5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold; }
+  @media only screen and (min-width: 768px) {
+    div.project-category-name {
+      padding: initial;
+      margin-top: .5em;
+      font-weight: normal;
+      width: 15%;
+      text-align: right; } }
 
-@font-face { font-family: "Roboto"; font-style: italic; font-weight: 900; font-display: swap; src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url("/assets/fonts/Roboto/Roboto-BlackItalic.ttf") format("ttf"); }
+@media only screen and (min-width: 768px) {
+  div.project-sub-category-container {
+    display: grid;
+    grid-template-columns: 15% auto; } }
+div.project-sub-category-container .project-sub-category-name {
+  font-weight: bold;
+  margin-top: .5em;
+  padding-bottom: 0.5em;
+  border-style: none none solid none;
+  border-width: 0 0 .4% 0;
+  border-color: #292f3a;
+  font-size: 1em;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  @media only screen and (min-width: 768px) {
+    div.project-sub-category-container .project-sub-category-name {
+      font-weight: normal;
+      padding-bottom: default;
+      border-style: none none none none;
+      text-align: right; } }
+div.project-sub-category-container div.project-list-container {
+  margin-top: .5em;
+  padding-left: 1.3%;
+  margin-left: 1.3%; }
+  @media only screen and (min-width: 768px) {
+    div.project-sub-category-container div.project-list-container {
+      border-style: none none none solid;
+      border-width: 0 0 0 .4%;
+      border-color: #292f3a; } }
+div.project-sub-category-container div.project-container {
+  display: block;
+  vertical-align: top;
+  padding-left: 1em;
+  padding-bottom: 1em; }
+  @media only screen and (min-width: 768px) {
+    div.project-sub-category-container div.project-container {
+      display: inline-block;
+      width: 40%; } }
+  @media only screen and (min-width: 992px) {
+    div.project-sub-category-container div.project-container {
+      width: 28%; } }
+  div.project-sub-category-container div.project-container div.img-link-combo-container {
+    display: flex; }
+    div.project-sub-category-container div.project-container div.img-link-combo-container img {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+    div.project-sub-category-container div.project-container div.img-link-combo-container div.project-links-container a {
+      padding-left: .3em;
+      padding-right: .3em;
+      display: flex;
+      align-items: center; }
+  div.project-sub-category-container div.project-container .project-title {
+    font-weight: normal;
+    font-family: "Roboto", sans-serif; }
+  div.project-sub-category-container div.project-container .project-year {
+    font-size: .6em;
+    padding-bottom: .5em; }
+  div.project-sub-category-container div.project-container .project-description {
+    padding-bottom: .5em; }
 
-@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 400; font-display: swap; src: local("Ubuntu Mono Regular"), local("UbuntuMono-Regular"), url("/assets/fonts/UbuntuMono/UbuntuMono-Regular.ttf") format("ttf"); }
+div.project-title-container h1.project-title {
+  margin: 0; }
+div.project-title-container h2.project-subtitle {
+  margin: 0;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  font-style: italic;
+  font-size: 1em; }
+div.project-title-container h2.project-subtitle::before {
+  content: " ~ "; }
 
-@font-face { font-family: "Ubuntu Mono"; font-style: italic; font-weight: 400; font-display: swap; src: local("Ubuntu Mono Italic"), local("UbuntuMono-Italic"), url("/assets/fonts/UbuntuMono/UbuntuMono-Italic.ttf") format("ttf"); }
+div.project-excerpt-container p.project-excerpt {
+  font-style: italic;
+  padding-bottom: 2em; }
 
-@font-face { font-family: "Ubuntu Mono"; font-style: normal; font-weight: 700; font-display: swap; src: local("Ubuntu Mono Bold"), local("UbuntuMono-Bold"), url("/assets/fonts/UbuntuMono/UbuntuMono-Bold.ttf") format("ttf"); }
+.salience-highlight {
+  color: red; }
 
-@font-face { font-family: "Ubuntu Mono"; font-style: italic; font-weight: 700; font-display: swap; src: local("Ubuntu Mono Bold Italic"), local("UbuntuMono-BoldItalic"), url("/assets/fonts/UbuntuMono/UbuntuMono-BoldItalic.ttf") format("ttf"); }
-
-div.panel, div.card { padding-left: 1.5em; padding-right: 1.5em; padding-top: 1em; padding-bottom: 1em; }
-
-html { color: #ECEFF4; background-color: #2E3440; font-family: "Roboto", sans-serif; font-style: normal; font-variant: normal; font-weight: 300; font-size: 1em; }
-
-::selection { color: #2E3440; background-color: #ECEFF4; }
-
-div.card { box-shadow: 0 0 0.5em 0.1em rgba(23, 26, 32, 0.5); }
-
-a { color: #88C0D0; text-decoration: none; }
-
-a:hover { text-shadow: 0 0 0.1em #88C0D0; }
-
-div.panel-header { margin: auto; width: 80%; }
-
-h1, h2, h3, h4, h5, h6 { font-family: "Merriweather", serif; color: #ECEFF4; text-shadow: 0 0 0.1em #ECEFF4; }
-
-img, video { box-shadow: 0 0 0.5em 0.1em rgba(23, 26, 32, 0.5); max-height: 10em; max-width: 100%; width: auto; }
-
-video { max-height: 20em; }
-
-div.nav-bar-container { display: flex; justify-content: center; }
-
-div.nav-bar { font-family: "Cuprum"; text-align: center; width: 100%; display: flex; flex-flow: row wrap; justify-content: center; }
-
-nav * { margin: 0; padding: 0.1em 0.5em; color: #88C0D0; }
-
-nav .current { border-bottom-style: solid; border-bottom-width: 0.15em; border-bottom-color: #88C0D0; }
-
-nav a:hover { background-color: #88C0D0; color: #2E3440; transition: box-shadow 0.1s; border-bottom-style: solid; border-bottom-width: 0.15em; border-bottom-color: #88C0D0; box-shadow: 0 0 0.5em 0.1em #88C0D0; text-shadow: 0 0 0.1em #2E3440; }
-
-/* nav div.brightness-switcher { display: inline; img { @include clear_box_shadow; height: 1em; width: auto; } } nav div.brightness-switcher:hover { background-color: $bg0; } //*/
-div.panel-body { display: flex; }
-
-div.panel-sidebar { margin: auto; width: 10%; }
-
-div.panel-content { margin: auto; width: 80%; }
-
-span.publication-group-header { font-family: "Roboto", sans-serif; font-weight: 100; }
-
-div.publication-group-content-container { padding-left: 3em; }
-
-div.publication-container { margin: 1.5em 0; font-size: 0.8em; color: #C4CDDE; font-weight: 100; }
-
-div.publication-container span.title { color: #ECEFF4; font-family: "Merriweather", serif; font-size: 1.2em; line-height: 1.2; text-shadow: 0 0 0.1em #ECEFF4; }
-
-div.publication-container span.venue { font-style: italic; }
-
-div.publication-container span.resources { display: block; }
-
-span.title, span.authors { display: block; }
-
-div.project-container { background-position: center; background-repeat: no-repeat; background-size: cover; padding: 1em 1em 1em 1em; margin-top: 2em; margin-bottom: 2em; box-shadow: 0 0 0.5em 0.1em rgba(23, 26, 32, 0.5); }
-
-div.project-container span { padding: .2em .2em; background-color: #2E3440; line-height: 1.5em; }
-
-div.project-container .project-description { font-style: italic; }
-
-div.project-title-container h1.project-title { margin: 0; }
-
-div.project-title-container h2.project-subtitle { margin: 0; text-shadow: 0 0 0 rgba(0, 0, 0, 0); font-style: italic; font-size: 1em; }
-
-div.project-title-container h2.project-subtitle::before { content: " ~ "; }
-
-div.project-excerpt-container p.project-excerpt { font-style: italic; padding-bottom: 2em; }
-
-.salience-highlight { color: red; }
-
-.salience-focus { font-weight: bold; }
-
-/*# sourceMappingURL=theme-ambient.css.map */
+.salience-focus {
+  font-weight: bold; }
